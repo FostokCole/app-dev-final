@@ -1,0 +1,223 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ninja\\source\\repos\\HopsitalSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4D42CE87-EE27-4F16-8705-6A6458D7B430}|HopsitalSystem\\HopsitalSystem.csproj|c:\\users\\ninja\\source\\repos\\hopsitalsystem\\hopsitalsystem\\forms\\bookappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D42CE87-EE27-4F16-8705-6A6458D7B430}|HopsitalSystem\\HopsitalSystem.csproj|solutionrelative:hopsitalsystem\\forms\\bookappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D42CE87-EE27-4F16-8705-6A6458D7B430}|HopsitalSystem\\HopsitalSystem.csproj|c:\\users\\ninja\\source\\repos\\hopsitalsystem\\hopsitalsystem\\forms\\doctorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D42CE87-EE27-4F16-8705-6A6458D7B430}|HopsitalSystem\\HopsitalSystem.csproj|solutionrelative:hopsitalsystem\\forms\\doctorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D42CE87-EE27-4F16-8705-6A6458D7B430}|HopsitalSystem\\HopsitalSystem.csproj|c:\\users\\ninja\\source\\repos\\hopsitalsystem\\hopsitalsystem\\hopsitaldbdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{4D42CE87-EE27-4F16-8705-6A6458D7B430}|HopsitalSystem\\HopsitalSystem.csproj|solutionrelative:hopsitalsystem\\hopsitaldbdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D42CE87-EE27-4F16-8705-6A6458D7B430}|HopsitalSystem\\HopsitalSystem.csproj|c:\\users\\ninja\\source\\repos\\hopsitalsystem\\hopsitalsystem\\forms\\doctoravailabilityform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4D42CE87-EE27-4F16-8705-6A6458D7B430}|HopsitalSystem\\HopsitalSystem.csproj|solutionrelative:hopsitalsystem\\forms\\doctoravailabilityform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D42CE87-EE27-4F16-8705-6A6458D7B430}|HopsitalSystem\\HopsitalSystem.csproj|c:\\users\\ninja\\source\\repos\\hopsitalsystem\\hopsitalsystem\\forms\\doctorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4D42CE87-EE27-4F16-8705-6A6458D7B430}|HopsitalSystem\\HopsitalSystem.csproj|solutionrelative:hopsitalsystem\\forms\\doctorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D42CE87-EE27-4F16-8705-6A6458D7B430}|HopsitalSystem\\HopsitalSystem.csproj|c:\\users\\ninja\\source\\repos\\hopsitalsystem\\hopsitalsystem\\forms\\appointmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D42CE87-EE27-4F16-8705-6A6458D7B430}|HopsitalSystem\\HopsitalSystem.csproj|solutionrelative:hopsitalsystem\\forms\\appointmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D42CE87-EE27-4F16-8705-6A6458D7B430}|HopsitalSystem\\HopsitalSystem.csproj|c:\\users\\ninja\\source\\repos\\hopsitalsystem\\hopsitalsystem\\forms\\bookappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4D42CE87-EE27-4F16-8705-6A6458D7B430}|HopsitalSystem\\HopsitalSystem.csproj|solutionrelative:hopsitalsystem\\forms\\bookappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D42CE87-EE27-4F16-8705-6A6458D7B430}|HopsitalSystem\\HopsitalSystem.csproj|c:\\users\\ninja\\source\\repos\\hopsitalsystem\\hopsitalsystem\\forms\\patientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D42CE87-EE27-4F16-8705-6A6458D7B430}|HopsitalSystem\\HopsitalSystem.csproj|solutionrelative:hopsitalsystem\\forms\\patientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D42CE87-EE27-4F16-8705-6A6458D7B430}|HopsitalSystem\\HopsitalSystem.csproj|c:\\users\\ninja\\source\\repos\\hopsitalsystem\\hopsitalsystem\\forms\\patientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4D42CE87-EE27-4F16-8705-6A6458D7B430}|HopsitalSystem\\HopsitalSystem.csproj|solutionrelative:hopsitalsystem\\forms\\patientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D42CE87-EE27-4F16-8705-6A6458D7B430}|HopsitalSystem\\HopsitalSystem.csproj|c:\\users\\ninja\\source\\repos\\hopsitalsystem\\hopsitalsystem\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D42CE87-EE27-4F16-8705-6A6458D7B430}|HopsitalSystem\\HopsitalSystem.csproj|solutionrelative:hopsitalsystem\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D42CE87-EE27-4F16-8705-6A6458D7B430}|HopsitalSystem\\HopsitalSystem.csproj|C:\\Users\\ninja\\source\\repos\\HopsitalSystem\\hopsitalsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D42CE87-EE27-4F16-8705-6A6458D7B430}|HopsitalSystem\\HopsitalSystem.csproj|solutionrelative:hopsitalsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D42CE87-EE27-4F16-8705-6A6458D7B430}|HopsitalSystem\\HopsitalSystem.csproj|c:\\users\\ninja\\source\\repos\\hopsitalsystem\\hopsitalsystem\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D42CE87-EE27-4F16-8705-6A6458D7B430}|HopsitalSystem\\HopsitalSystem.csproj|solutionrelative:hopsitalsystem\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookAppointment.cs",
+              "DocumentMoniker": "C:\\Users\\ninja\\source\\repos\\HopsitalSystem\\HopsitalSystem\\Forms\\BookAppointment.cs",
+              "RelativeDocumentMoniker": "HopsitalSystem\\Forms\\BookAppointment.cs",
+              "ToolTip": "C:\\Users\\ninja\\source\\repos\\HopsitalSystem\\HopsitalSystem\\Forms\\BookAppointment.cs",
+              "RelativeToolTip": "HopsitalSystem\\Forms\\BookAppointment.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCQAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T18:05:53.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppointmentForm.cs",
+              "DocumentMoniker": "C:\\Users\\ninja\\source\\repos\\HopsitalSystem\\HopsitalSystem\\Forms\\AppointmentForm.cs",
+              "RelativeDocumentMoniker": "HopsitalSystem\\Forms\\AppointmentForm.cs",
+              "ToolTip": "C:\\Users\\ninja\\source\\repos\\HopsitalSystem\\HopsitalSystem\\Forms\\AppointmentForm.cs",
+              "RelativeToolTip": "HopsitalSystem\\Forms\\AppointmentForm.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T18:04:17.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HopsitalDBDataSet.xsd",
+              "DocumentMoniker": "C:\\Users\\ninja\\source\\repos\\HopsitalSystem\\HopsitalSystem\\HopsitalDBDataSet.xsd",
+              "RelativeDocumentMoniker": "HopsitalSystem\\HopsitalDBDataSet.xsd",
+              "ToolTip": "C:\\Users\\ninja\\source\\repos\\HopsitalSystem\\HopsitalSystem\\HopsitalDBDataSet.xsd",
+              "RelativeToolTip": "HopsitalSystem\\HopsitalDBDataSet.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2026-05-05T18:00:45.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DoctorForm.cs",
+              "DocumentMoniker": "C:\\Users\\ninja\\source\\repos\\HopsitalSystem\\HopsitalSystem\\Forms\\DoctorForm.cs",
+              "RelativeDocumentMoniker": "HopsitalSystem\\Forms\\DoctorForm.cs",
+              "ToolTip": "C:\\Users\\ninja\\source\\repos\\HopsitalSystem\\HopsitalSystem\\Forms\\DoctorForm.cs",
+              "RelativeToolTip": "HopsitalSystem\\Forms\\DoctorForm.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAnwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T17:58:23.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DoctorForm.cs [Design - Spanish]",
+              "DocumentMoniker": "C:\\Users\\ninja\\source\\repos\\HopsitalSystem\\HopsitalSystem\\Forms\\DoctorForm.cs",
+              "RelativeDocumentMoniker": "HopsitalSystem\\Forms\\DoctorForm.cs",
+              "ToolTip": "C:\\Users\\ninja\\source\\repos\\HopsitalSystem\\HopsitalSystem\\Forms\\DoctorForm.cs [Design - Spanish]",
+              "RelativeToolTip": "HopsitalSystem\\Forms\\DoctorForm.cs [Design - Spanish]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T17:56:29.12Z",
+              "EditorCaption": " [Design - Spanish]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DoctorAvailabilityForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ninja\\source\\repos\\HopsitalSystem\\HopsitalSystem\\Forms\\DoctorAvailabilityForm.cs",
+              "RelativeDocumentMoniker": "HopsitalSystem\\Forms\\DoctorAvailabilityForm.cs",
+              "ToolTip": "C:\\Users\\ninja\\source\\repos\\HopsitalSystem\\HopsitalSystem\\Forms\\DoctorAvailabilityForm.cs [Design]",
+              "RelativeToolTip": "HopsitalSystem\\Forms\\DoctorAvailabilityForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T17:56:25.896Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BookAppointment.cs [Design - Spanish]",
+              "DocumentMoniker": "C:\\Users\\ninja\\source\\repos\\HopsitalSystem\\HopsitalSystem\\Forms\\BookAppointment.cs",
+              "RelativeDocumentMoniker": "HopsitalSystem\\Forms\\BookAppointment.cs",
+              "ToolTip": "C:\\Users\\ninja\\source\\repos\\HopsitalSystem\\HopsitalSystem\\Forms\\BookAppointment.cs [Design - Spanish]",
+              "RelativeToolTip": "HopsitalSystem\\Forms\\BookAppointment.cs [Design - Spanish]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T15:16:30.12Z",
+              "EditorCaption": " [Design - Spanish]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PatientForm.cs",
+              "DocumentMoniker": "C:\\Users\\ninja\\source\\repos\\HopsitalSystem\\HopsitalSystem\\Forms\\PatientForm.cs",
+              "RelativeDocumentMoniker": "HopsitalSystem\\Forms\\PatientForm.cs",
+              "ToolTip": "C:\\Users\\ninja\\source\\repos\\HopsitalSystem\\HopsitalSystem\\Forms\\PatientForm.cs",
+              "RelativeToolTip": "HopsitalSystem\\Forms\\PatientForm.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T15:10:05.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PatientForm.cs [Design - Spanish]",
+              "DocumentMoniker": "C:\\Users\\ninja\\source\\repos\\HopsitalSystem\\HopsitalSystem\\Forms\\PatientForm.cs",
+              "RelativeDocumentMoniker": "HopsitalSystem\\Forms\\PatientForm.cs",
+              "ToolTip": "C:\\Users\\ninja\\source\\repos\\HopsitalSystem\\HopsitalSystem\\Forms\\PatientForm.cs [Design - Spanish]",
+              "RelativeToolTip": "HopsitalSystem\\Forms\\PatientForm.cs [Design - Spanish]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T15:08:11.085Z",
+              "EditorCaption": " [Design - Spanish]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ninja\\source\\repos\\HopsitalSystem\\HopsitalSystem\\Forms\\Form1.cs",
+              "RelativeDocumentMoniker": "HopsitalSystem\\Forms\\Form1.cs",
+              "ToolTip": "C:\\Users\\ninja\\source\\repos\\HopsitalSystem\\HopsitalSystem\\Forms\\Form1.cs",
+              "RelativeToolTip": "HopsitalSystem\\Forms\\Form1.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAIA9wDYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T15:06:06.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ninja\\source\\repos\\HopsitalSystem\\HopsitalSystem\\Program.cs",
+              "RelativeDocumentMoniker": "HopsitalSystem\\Program.cs",
+              "ToolTip": "C:\\Users\\ninja\\source\\repos\\HopsitalSystem\\HopsitalSystem\\Program.cs",
+              "RelativeToolTip": "HopsitalSystem\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:42:48.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\ninja\\source\\repos\\HopsitalSystem\\HopsitalSystem\\Forms\\LoginForm.cs",
+              "RelativeDocumentMoniker": "HopsitalSystem\\Forms\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\ninja\\source\\repos\\HopsitalSystem\\HopsitalSystem\\Forms\\LoginForm.cs",
+              "RelativeToolTip": "HopsitalSystem\\Forms\\LoginForm.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAwwCUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:37:21.626Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
