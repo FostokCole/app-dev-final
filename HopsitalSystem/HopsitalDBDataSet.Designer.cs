@@ -2305,17 +2305,18 @@ SELECT AppointmentId, PatientId, DoctorId, AppointmentDate FROM Appointments WHE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[6];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[7];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT AppointmentId, PatientId, DoctorId, AppointmentDate FROM dbo.Appointments";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT a.AppointmentID, \r\n       p.Name AS PatientName, \r\n       d.Name AS Doctor" +
-                "Name, \r\n       a.AppointmentDate\r\nFROM Appointments a\r\nJOIN Patients p ON a.Pati" +
-                "entID = p.PatientID\r\nJOIN Doctors d ON a.DoctorID = d.DoctorID";
+            this._commandCollection[1].CommandText = "SELECT AppointmentDate \r\nFROM Appointments\r\nWHERE DoctorID = @DoctorID\r\nAND CAST(" +
+                "AppointmentDate AS DATE) = CAST(@AppointmentDate AS DATE)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DoctorID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "DoctorId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppointmentDate", global::System.Data.SqlDbType.VarChar, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
             this._commandCollection[2].CommandText = "SELECT a.AppointmentID, \r\n       p.Name AS PatientName, \r\n       d.Name AS Doctor" +
@@ -2326,25 +2327,30 @@ SELECT AppointmentId, PatientId, DoctorId, AppointmentDate FROM Appointments WHE
             this._commandCollection[3].Connection = this.Connection;
             this._commandCollection[3].CommandText = "SELECT a.AppointmentID, \r\n       p.Name AS PatientName, \r\n       d.Name AS Doctor" +
                 "Name, \r\n       a.AppointmentDate\r\nFROM Appointments a\r\nJOIN Patients p ON a.Pati" +
-                "entID = p.PatientID\r\nJOIN Doctors d ON a.DoctorID = d.DoctorID\r\nWHERE d.DoctorId" +
-                " = @DoctorId";
+                "entID = p.PatientID\r\nJOIN Doctors d ON a.DoctorID = d.DoctorID";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DoctorId", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "DoctorId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[4].Connection = this.Connection;
-            this._commandCollection[4].CommandText = "INSERT INTO Appointments (PatientID, DoctorID, AppointmentDate)\r\nVALUES (@Patient" +
-                "ID, @DoctorID, @AppointmentDate)";
+            this._commandCollection[4].CommandText = "SELECT a.AppointmentID,\r\n       p.Name AS PatientName,\r\n       a.AppointmentDate\r" +
+                "\nFROM Appointments a\r\nJOIN Patients p ON a.PatientID = p.PatientID\r\nWHERE a.Doct" +
+                "orID = @DoctorID\r\nORDER BY a.AppointmentDate";
             this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PatientID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "PatientId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DoctorID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "DoctorId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppointmentDate", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 0, 0, "AppointmentDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[5] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[5].Connection = this.Connection;
-            this._commandCollection[5].CommandText = "SELECT COUNT(*) \r\nFROM Appointments\r\nWHERE DoctorID = @DoctorID \r\nAND Appointment" +
-                "Date = @AppointmentDate";
+            this._commandCollection[5].CommandText = "INSERT INTO Appointments (PatientID, DoctorID, AppointmentDate)\r\nVALUES (@Patient" +
+                "ID, @DoctorID, @AppointmentDate)";
             this._commandCollection[5].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PatientID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "PatientId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DoctorID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "DoctorId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppointmentDate", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 0, 0, "AppointmentDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[6] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[6].Connection = this.Connection;
+            this._commandCollection[6].CommandText = "SELECT COUNT(*) \r\nFROM Appointments\r\nWHERE DoctorID = @DoctorID \r\nAND Appointment" +
+                "Date = @AppointmentDate";
+            this._commandCollection[6].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[6].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DoctorID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "DoctorId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[6].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppointmentDate", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 0, 0, "AppointmentDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2375,8 +2381,33 @@ SELECT AppointmentId, PatientId, DoctorId, AppointmentDate FROM Appointments WHE
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillWithDetails(HopsitalDBDataSet.AppointmentsDataTable dataTable) {
+        public virtual int FillByDoctorAndDate(HopsitalDBDataSet.AppointmentsDataTable dataTable, global::System.Nullable<int> DoctorID, string AppointmentDate) {
             this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((DoctorID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((int)(DoctorID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((AppointmentDate == null)) {
+                throw new global::System.ArgumentNullException("AppointmentDate");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(AppointmentDate));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillWithDetails(HopsitalDBDataSet.AppointmentsDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -2389,7 +2420,7 @@ SELECT AppointmentId, PatientId, DoctorId, AppointmentDate FROM Appointments WHE
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
         public virtual HopsitalDBDataSet.AppointmentsDataTable GetAppointmentDetails() {
-            this.Adapter.SelectCommand = this.CommandCollection[2];
+            this.Adapter.SelectCommand = this.CommandCollection[3];
             HopsitalDBDataSet.AppointmentsDataTable dataTable = new HopsitalDBDataSet.AppointmentsDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -2398,15 +2429,18 @@ SELECT AppointmentId, PatientId, DoctorId, AppointmentDate FROM Appointments WHE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int GetDrSchedule(HopsitalDBDataSet.AppointmentsDataTable dataTable, int DoctorId) {
-            this.Adapter.SelectCommand = this.CommandCollection[3];
-            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(DoctorId));
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual HopsitalDBDataSet.AppointmentsDataTable GetScheduleByDoctor(global::System.Nullable<int> DoctorID) {
+            this.Adapter.SelectCommand = this.CommandCollection[4];
+            if ((DoctorID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((int)(DoctorID.Value));
             }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            HopsitalDBDataSet.AppointmentsDataTable dataTable = new HopsitalDBDataSet.AppointmentsDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2601,7 +2635,7 @@ SELECT AppointmentId, PatientId, DoctorId, AppointmentDate FROM Appointments WHE
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
         public virtual int InsertAppointment(global::System.Nullable<int> PatientID, global::System.Nullable<int> DoctorID, global::System.Nullable<global::System.DateTime> AppointmentDate) {
-            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[4];
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[5];
             if ((PatientID.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PatientID.Value));
             }
@@ -2641,7 +2675,7 @@ SELECT AppointmentId, PatientId, DoctorId, AppointmentDate FROM Appointments WHE
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual global::System.Nullable<int> IsDoctorBusy(global::System.Nullable<int> DoctorID, global::System.Nullable<global::System.DateTime> AppointmentDate) {
-            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[5];
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[6];
             if ((DoctorID.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(DoctorID.Value));
             }

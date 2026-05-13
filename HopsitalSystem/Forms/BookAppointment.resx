@@ -131,7 +131,7 @@
     <value>21, 110</value>
   </data>
   <data name="&gt;&gt;btnBook.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;lblPatientName.Name" xml:space="preserve">
     <value>lblPatientName</value>
@@ -159,7 +159,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblPatientName.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;btnBook.Parent" xml:space="preserve">
     <value>$this</value>
@@ -189,16 +189,22 @@
     <value>205, 20</value>
   </data>
   <data name="&gt;&gt;appointmentDatePicker.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="btnBook.Location" type="System.Drawing.Point, System.Drawing">
     <value>21, 157</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="lblPatientName.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="&gt;&gt;btnBook.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="appointmentDatePicker.CustomFormat" xml:space="preserve">
     <value>yyyy-MM-dd hh:mm tt</value>
@@ -209,11 +215,20 @@
   <data name="btnBook.Size" type="System.Drawing.Size, System.Drawing">
     <value>113, 39</value>
   </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;appointmentDatePicker.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;DoctorComboBox.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -232,6 +247,9 @@
   </data>
   <data name="btnBook.Text" xml:space="preserve">
     <value>Book Appointment</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 182</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>

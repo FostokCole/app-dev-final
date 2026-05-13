@@ -30,3 +30,4 @@ C:\Users\ninja\source\repos\HopsitalSystem\HopsitalSystem\obj\Debug\HopsitalSyst
 C:\Users\ninja\source\repos\HopsitalSystem\HopsitalSystem\obj\Debug\HopsitalSystem.Forms.DoctorForm.es.resources
 C:\Users\ninja\source\repos\HopsitalSystem\HopsitalSystem\obj\Debug\HopsitalSystem.Forms.DoctorForm.fr.resources
 C:\Users\ninja\source\repos\HopsitalSystem\HopsitalSystem\obj\Debug\HopsitalSystem.Forms.PatientForm.es.resources
+C:\Users\ninja\source\repos\HopsitalSystem\HopsitalSystem\obj\Debug\HopsitalSystem.Forms.DoctorAvailabilityForm.resources

@@ -33,5 +33,10 @@ namespace HopsitalSystem.Forms
             this.appointmentsTableAdapter.Fill(this.hopsitalDBDataSet.Appointments);
 
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

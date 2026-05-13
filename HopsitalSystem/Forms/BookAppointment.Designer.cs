@@ -34,6 +34,7 @@
             this.btnBook = new System.Windows.Forms.Button();
             this.medicalRecordsTableAdapter1 = new HopsitalSystem.HopsitalDBDataSetTableAdapters.MedicalRecordsTableAdapter();
             this.appointmentDatePicker = new System.Windows.Forms.DateTimePicker();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblPatientName
@@ -64,10 +65,18 @@
             this.appointmentDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.appointmentDatePicker.Name = "appointmentDatePicker";
             // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // BookAppointment
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.appointmentDatePicker);
             this.Controls.Add(this.btnBook);
             this.Controls.Add(this.DoctorComboBox);
@@ -86,5 +95,6 @@
         private System.Windows.Forms.Button btnBook;
         private HopsitalDBDataSetTableAdapters.MedicalRecordsTableAdapter medicalRecordsTableAdapter1;
         private System.Windows.Forms.DateTimePicker appointmentDatePicker;
+        private System.Windows.Forms.Button button1;
     }
 }

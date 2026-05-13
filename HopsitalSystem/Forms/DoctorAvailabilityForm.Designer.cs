@@ -35,29 +35,26 @@
             this.appointmentsTableAdapter = new HopsitalSystem.HopsitalDBDataSetTableAdapters.AppointmentsTableAdapter();
             this.tableAdapterManager = new HopsitalSystem.HopsitalDBDataSetTableAdapters.TableAdapterManager();
             this.appointmentsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.appointmentsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.appointmentsDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblDrName = new System.Windows.Forms.Label();
+            this.scheduleGrid = new System.Windows.Forms.DataGridView();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.hopsitalDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appointmentsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appointmentsBindingNavigator)).BeginInit();
             this.appointmentsBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.appointmentsDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scheduleGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // hopsitalDBDataSet
@@ -109,9 +106,34 @@
             this.appointmentsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.appointmentsBindingNavigator.Name = "appointmentsBindingNavigator";
             this.appointmentsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.appointmentsBindingNavigator.Size = new System.Drawing.Size(584, 25);
+            this.appointmentsBindingNavigator.Size = new System.Drawing.Size(339, 25);
             this.appointmentsBindingNavigator.TabIndex = 0;
             this.appointmentsBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -146,16 +168,9 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -178,26 +193,8 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // appointmentsBindingNavigatorSaveItem
             // 
@@ -208,62 +205,42 @@
             this.appointmentsBindingNavigatorSaveItem.Text = "Save Data";
             this.appointmentsBindingNavigatorSaveItem.Click += new System.EventHandler(this.appointmentsBindingNavigatorSaveItem_Click);
             // 
-            // appointmentsDataGridView
-            // 
-            this.appointmentsDataGridView.AutoGenerateColumns = false;
-            this.appointmentsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.appointmentsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4});
-            this.appointmentsDataGridView.DataSource = this.appointmentsBindingSource;
-            this.appointmentsDataGridView.Location = new System.Drawing.Point(141, 28);
-            this.appointmentsDataGridView.Name = "appointmentsDataGridView";
-            this.appointmentsDataGridView.Size = new System.Drawing.Size(443, 423);
-            this.appointmentsDataGridView.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "AppointmentId";
-            this.dataGridViewTextBoxColumn1.HeaderText = "AppointmentId";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "PatientId";
-            this.dataGridViewTextBoxColumn2.HeaderText = "PatientId";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "DoctorId";
-            this.dataGridViewTextBoxColumn3.HeaderText = "DoctorId";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "AppointmentDate";
-            this.dataGridViewTextBoxColumn4.HeaderText = "AppointmentDate";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
             // lblDrName
             // 
             this.lblDrName.AutoSize = true;
-            this.lblDrName.Location = new System.Drawing.Point(12, 40);
+            this.lblDrName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lblDrName.Location = new System.Drawing.Point(93, 38);
             this.lblDrName.Name = "lblDrName";
-            this.lblDrName.Size = new System.Drawing.Size(35, 13);
+            this.lblDrName.Size = new System.Drawing.Size(64, 25);
             this.lblDrName.TabIndex = 2;
             this.lblDrName.Text = "label1";
+            // 
+            // scheduleGrid
+            // 
+            this.scheduleGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.scheduleGrid.Location = new System.Drawing.Point(0, 70);
+            this.scheduleGrid.Name = "scheduleGrid";
+            this.scheduleGrid.Size = new System.Drawing.Size(342, 348);
+            this.scheduleGrid.TabIndex = 3;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(12, 42);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.TabIndex = 4;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // DoctorAvailabilityForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 450);
+            this.ClientSize = new System.Drawing.Size(339, 417);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.scheduleGrid);
             this.Controls.Add(this.lblDrName);
-            this.Controls.Add(this.appointmentsDataGridView);
             this.Controls.Add(this.appointmentsBindingNavigator);
             this.Name = "DoctorAvailabilityForm";
             this.Text = "DoctorAvailabilityForm";
@@ -273,7 +250,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.appointmentsBindingNavigator)).EndInit();
             this.appointmentsBindingNavigator.ResumeLayout(false);
             this.appointmentsBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.appointmentsDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scheduleGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -298,11 +275,8 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton appointmentsBindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView appointmentsDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.Label lblDrName;
+        private System.Windows.Forms.DataGridView scheduleGrid;
+        private System.Windows.Forms.Button btnBack;
     }
 }

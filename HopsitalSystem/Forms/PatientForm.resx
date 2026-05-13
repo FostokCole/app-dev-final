@@ -143,6 +143,9 @@
   <data name="btnBack.Text" xml:space="preserve">
     <value>Back</value>
   </data>
+  <data name="&gt;&gt;searchButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="&gt;&gt;bindingNavigatorCountItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -380,9 +383,6 @@
   <data name="bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="patientsDataGridView.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
   <data name="btnBookAppointment.Text" xml:space="preserve">
     <value>Book Appointment</value>
   </data>
@@ -592,8 +592,8 @@
   <data name="searchTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;searchButton.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="patientsDataGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>es</value>

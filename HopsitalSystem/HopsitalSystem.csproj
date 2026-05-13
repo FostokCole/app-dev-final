@@ -163,8 +163,17 @@
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MRForm.es.resx">
+      <DependentUpon>MRForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MRForm.fr.resx">
+      <DependentUpon>MRForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MRForm.resx">
       <DependentUpon>MRForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PatientForm.aa.resx">
+      <DependentUpon>PatientForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PatientForm.es.resx">
       <DependentUpon>PatientForm.cs</DependentUpon>

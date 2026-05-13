@@ -84,5 +84,9 @@ namespace HopsitalSystem.Forms
             appointmentDatePicker.Value = DateTime.Today;
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -36,7 +36,26 @@ namespace HopsitalSystem.Forms
 
         private void btnDrAvailability_Click(object sender, EventArgs e)
         {
+            if (doctorsDataGridView.CurrentRow == null)
+            {
+                MessageBox.Show("Please select a doctor first");
+                return;
+            }
+            int drId = Convert.ToInt32(doctorsDataGridView.CurrentRow.Cells[0].Value);
+            string drName = doctorsDataGridView.CurrentRow.Cells[1].Value.ToString();
 
+            DoctorAvailabilityForm frm = new DoctorAvailabilityForm(drId, drName);
+            frm.ShowDialog();
+        }
+
+        private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

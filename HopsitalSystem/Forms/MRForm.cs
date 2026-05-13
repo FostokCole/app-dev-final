@@ -32,5 +32,10 @@ namespace HopsitalSystem.Forms
             this.medicalRecordsTableAdapter.Fill(this.hopsitalDBDataSet.MedicalRecords);
             
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

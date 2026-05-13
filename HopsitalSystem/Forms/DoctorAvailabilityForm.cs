@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HopsitalSystem.HopsitalDBDataSetTableAdapters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,15 @@ namespace HopsitalSystem.Forms
 {
     public partial class DoctorAvailabilityForm : Form
     {
-        public DoctorAvailabilityForm()
+        int drId;
+        string drName;
+        AppointmentsTableAdapter ata = new AppointmentsTableAdapter();
+
+        public DoctorAvailabilityForm(int drId, string drName)
         {
             InitializeComponent();
+            this.drId = drId;
+            this.drName = drName;
         }
 
         private void appointmentsBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -29,7 +36,20 @@ namespace HopsitalSystem.Forms
         {
             // TODO: This line of code loads data into the 'hopsitalDBDataSet.Appointments' table. You can move, or remove it, as needed.
             this.appointmentsTableAdapter.Fill(this.hopsitalDBDataSet.Appointments);
+            lblDrName.Text = "Dr " + drName;
 
+            //Set a new data source for table
+            DataTable dt = ata.GetScheduleByDoctor(drId);
+            scheduleGrid.DataSource = dt;
+
+            scheduleGrid.Columns["AppointmentID"].Visible = false;
+            scheduleGrid.Columns["PatientID"].Visible = false;
+            scheduleGrid.Columns["DoctorID"].Visible = false;
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
