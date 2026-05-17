@@ -122,21 +122,24 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 13</value>
+    <value>106, 28</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Identifiant</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 13</value>
+    <value>140, 28</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Mot de passe</value>
   </data>
   <data name="lblLang.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 13</value>
+    <value>197, 21</value>
   </data>
   <data name="lblLang.Text" xml:space="preserve">
     <value>Langue Actuelle: Français</value>
+  </data>
+  <data name="LogIn.Text" xml:space="preserve">
+    <value>Se Connecter</value>
   </data>
 </root>
