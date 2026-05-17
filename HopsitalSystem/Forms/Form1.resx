@@ -117,259 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnMR.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;btnAppointments.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnDoctors.Size" type="System.Drawing.Size, System.Drawing">
-    <value>246, 46</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Current Language: English</value>
-  </data>
-  <data name="btnMR.Text" xml:space="preserve">
-    <value>Medical Records</value>
-  </data>
-  <data name="btnDoctors.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 135</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnExit.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;hopsitalDBDataSet.Type" xml:space="preserve">
-    <value>HopsitalSystem.HopsitalDBDataSet, HopsitalDBDataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="btnMR.Size" type="System.Drawing.Size, System.Drawing">
-    <value>246, 46</value>
-  </data>
-  <data name="&gt;&gt;btnDoctors.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnDoctors.Text" xml:space="preserve">
-    <value>Doctors</value>
-  </data>
-  <data name="&gt;&gt;appointmentsTableAdapter.Name" xml:space="preserve">
-    <value>appointmentsTableAdapter</value>
-  </data>
-  <data name="btnPatients.Text" xml:space="preserve">
-    <value>Patients</value>
-  </data>
-  <data name="comboBox1.Items2" xml:space="preserve">
-    <value>Español</value>
-  </data>
-  <data name="btnAppointments.Text" xml:space="preserve">
-    <value>Appointments</value>
-  </data>
-  <data name="&gt;&gt;hopsitalDBDataSet.Name" xml:space="preserve">
-    <value>hopsitalDBDataSet</value>
-  </data>
-  <data name="&gt;&gt;btnExit.Name" xml:space="preserve">
-    <value>btnExit</value>
-  </data>
-  <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
-  </data>
-  <data name="&gt;&gt;btnMR.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btnAppointments.Name" xml:space="preserve">
-    <value>btnAppointments</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Welcome User!</value>
-  </data>
-  <data name="&gt;&gt;btnPatients.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;appointmentsBindingSource.Name" xml:space="preserve">
-    <value>appointmentsBindingSource</value>
-  </data>
-  <data name="&gt;&gt;btnAppointments.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnAppointments.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 187</value>
-  </data>
-  <data name="btnMR.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 239</value>
-  </data>
-  <data name="btnDoctors.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="btnAppointments.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;btnExit.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;patientsTableAdapter.Name" xml:space="preserve">
-    <value>patientsTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;btnPatients.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;btnMR.Name" xml:space="preserve">
-    <value>btnMR</value>
-  </data>
-  <data name="&gt;&gt;btnDoctors.Name" xml:space="preserve">
-    <value>btnDoctors</value>
-  </data>
-  <data name="btnAppointments.Size" type="System.Drawing.Size, System.Drawing">
-    <value>246, 46</value>
-  </data>
-  <data name="&gt;&gt;tableAdapterManager.Type" xml:space="preserve">
-    <value>HopsitalSystem.HopsitalDBDataSetTableAdapters.TableAdapterManager, HopsitalDBDataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;patientsBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
-    <value>timer1</value>
-  </data>
-  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 13</value>
-  </data>
-  <data name="&gt;&gt;btnDoctors.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnPatients.Name" xml:space="preserve">
-    <value>btnPatients</value>
-  </data>
-  <data name="comboBox1.Items" xml:space="preserve">
-    <value>English</value>
-  </data>
-  <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;btnExit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;patientsTableAdapter.Type" xml:space="preserve">
-    <value>HopsitalSystem.HopsitalDBDataSetTableAdapters.PatientsTableAdapter, HopsitalDBDataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btnAppointments.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>388, 377</value>
-  </data>
-  <data name="&gt;&gt;btnPatients.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnExit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 332</value>
-  </data>
-  <data name="btnExit.Text" xml:space="preserve">
-    <value>Exit</value>
-  </data>
-  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>265, 10</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;tableAdapterManager.Name" xml:space="preserve">
-    <value>tableAdapterManager</value>
-  </data>
-  <data name="btnPatients.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 83</value>
-  </data>
-  <data name="&gt;&gt;btnDoctors.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;btnMR.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnPatients.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;btnMR.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;patientsBindingSource.Name" xml:space="preserve">
-    <value>patientsBindingSource</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Form1</value>
-  </data>
-  <data name="comboBox1.Items1" xml:space="preserve">
-    <value>Français</value>
-  </data>
-  <data name="btnExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 38</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnExit.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="&gt;&gt;appointmentsBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;appointmentsTableAdapter.Type" xml:space="preserve">
-    <value>HopsitalSystem.HopsitalDBDataSetTableAdapters.AppointmentsTableAdapter, HopsitalDBDataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 13</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnPatients.Size" type="System.Drawing.Size, System.Drawing">
-    <value>246, 46</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
-    <value>comboBox1</value>
-  </data>
-  <metadata name="patientsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>739, 17</value>
-  </metadata>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1077, 17</value>
-  </metadata>
-  <metadata name="appointmentsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>168, 17</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="hopsitalDBDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="patientsTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>912, 17</value>
+  <metadata name="appointmentsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>168, 17</value>
   </metadata>
   <metadata name="appointmentsTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>373, 17</value>
@@ -377,4 +129,355 @@
   <metadata name="tableAdapterManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>570, 17</value>
   </metadata>
+  <metadata name="patientsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>739, 17</value>
+  </metadata>
+  <metadata name="patientsTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>912, 17</value>
+  </metadata>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1077, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnPatients.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei Light, 20.25pt</value>
+  </data>
+  <data name="btnPatients.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 198</value>
+  </data>
+  <data name="btnPatients.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 46</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnPatients.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnPatients.Text" xml:space="preserve">
+    <value>Patients</value>
+  </data>
+  <data name="&gt;&gt;btnPatients.Name" xml:space="preserve">
+    <value>btnPatients</value>
+  </data>
+  <data name="&gt;&gt;btnPatients.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnPatients.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnPatients.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="logoutButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei Light, 12pt</value>
+  </data>
+  <data name="logoutButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 526</value>
+  </data>
+  <data name="logoutButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 46</value>
+  </data>
+  <data name="logoutButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="logoutButton.Text" xml:space="preserve">
+    <value>Log Out</value>
+  </data>
+  <data name="&gt;&gt;logoutButton.Name" xml:space="preserve">
+    <value>logoutButton</value>
+  </data>
+  <data name="&gt;&gt;logoutButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;logoutButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;logoutButton.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnDoctors.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btnDoctors.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei Light, 20.25pt</value>
+  </data>
+  <data name="btnDoctors.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 123</value>
+  </data>
+  <data name="btnDoctors.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 46</value>
+  </data>
+  <data name="btnDoctors.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnDoctors.Text" xml:space="preserve">
+    <value>Doctors</value>
+  </data>
+  <data name="&gt;&gt;btnDoctors.Name" xml:space="preserve">
+    <value>btnDoctors</value>
+  </data>
+  <data name="&gt;&gt;btnDoctors.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDoctors.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnDoctors.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnAppointments.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btnAppointments.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei Light, 20.25pt</value>
+  </data>
+  <data name="btnAppointments.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 271</value>
+  </data>
+  <data name="btnAppointments.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 46</value>
+  </data>
+  <data name="btnAppointments.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btnAppointments.Text" xml:space="preserve">
+    <value>Appointments</value>
+  </data>
+  <data name="&gt;&gt;btnAppointments.Name" xml:space="preserve">
+    <value>btnAppointments</value>
+  </data>
+  <data name="&gt;&gt;btnAppointments.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAppointments.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnAppointments.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnMR.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei Light, 20.25pt</value>
+  </data>
+  <data name="btnMR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 352</value>
+  </data>
+  <data name="btnMR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 46</value>
+  </data>
+  <data name="btnMR.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btnMR.Text" xml:space="preserve">
+    <value>Medical Records</value>
+  </data>
+  <data name="&gt;&gt;btnMR.Name" xml:space="preserve">
+    <value>btnMR</value>
+  </data>
+  <data name="&gt;&gt;btnMR.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnMR.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnMR.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="dashboardLbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei Light, 27.75pt</value>
+  </data>
+  <data name="dashboardLbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, -3</value>
+  </data>
+  <data name="dashboardLbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>707, 55</value>
+  </data>
+  <data name="dashboardLbl.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="dashboardLbl.Text" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="dashboardLbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;dashboardLbl.Name" xml:space="preserve">
+    <value>dashboardLbl</value>
+  </data>
+  <data name="&gt;&gt;dashboardLbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dashboardLbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dashboardLbl.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="patientsDataView.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <metadata name="AppointmentId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="AppointmentId.HeaderText" xml:space="preserve">
+    <value>AppointmentId</value>
+  </data>
+  <metadata name="PatientId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="PatientId.HeaderText" xml:space="preserve">
+    <value>PatientId</value>
+  </data>
+  <metadata name="DoctorId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="DoctorId.HeaderText" xml:space="preserve">
+    <value>DoctorId</value>
+  </data>
+  <metadata name="AppointmentDate.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="AppointmentDate.HeaderText" xml:space="preserve">
+    <value>AppointmentDate</value>
+  </data>
+  <data name="patientsDataView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>293, 163</value>
+  </data>
+  <data name="patientsDataView.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>84</value>
+  </data>
+  <data name="patientsDataView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>415, 310</value>
+  </data>
+  <data name="patientsDataView.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;patientsDataView.Name" xml:space="preserve">
+    <value>patientsDataView</value>
+  </data>
+  <data name="&gt;&gt;patientsDataView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;patientsDataView.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;patientsDataView.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei Light, 15.75pt</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>293, 126</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>415, 36</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Upcoming Appointments</value>
+  </data>
+  <data name="label3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>774, 584</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Welcome User!</value>
+  </data>
+  <data name="&gt;&gt;hopsitalDBDataSet.Name" xml:space="preserve">
+    <value>hopsitalDBDataSet</value>
+  </data>
+  <data name="&gt;&gt;hopsitalDBDataSet.Type" xml:space="preserve">
+    <value>HopsitalSystem.HopsitalDBDataSet, HopsitalDBDataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;appointmentsBindingSource.Name" xml:space="preserve">
+    <value>appointmentsBindingSource</value>
+  </data>
+  <data name="&gt;&gt;appointmentsBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;appointmentsTableAdapter.Name" xml:space="preserve">
+    <value>appointmentsTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;appointmentsTableAdapter.Type" xml:space="preserve">
+    <value>HopsitalSystem.HopsitalDBDataSetTableAdapters.AppointmentsTableAdapter, HopsitalDBDataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tableAdapterManager.Name" xml:space="preserve">
+    <value>tableAdapterManager</value>
+  </data>
+  <data name="&gt;&gt;tableAdapterManager.Type" xml:space="preserve">
+    <value>HopsitalSystem.HopsitalDBDataSetTableAdapters.TableAdapterManager, HopsitalDBDataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;patientsBindingSource.Name" xml:space="preserve">
+    <value>patientsBindingSource</value>
+  </data>
+  <data name="&gt;&gt;patientsBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;patientsTableAdapter.Name" xml:space="preserve">
+    <value>patientsTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;patientsTableAdapter.Type" xml:space="preserve">
+    <value>HopsitalSystem.HopsitalDBDataSetTableAdapters.PatientsTableAdapter, HopsitalDBDataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
+    <value>timer1</value>
+  </data>
+  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AppointmentId.Name" xml:space="preserve">
+    <value>AppointmentId</value>
+  </data>
+  <data name="&gt;&gt;AppointmentId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PatientId.Name" xml:space="preserve">
+    <value>PatientId</value>
+  </data>
+  <data name="&gt;&gt;PatientId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DoctorId.Name" xml:space="preserve">
+    <value>DoctorId</value>
+  </data>
+  <data name="&gt;&gt;DoctorId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AppointmentDate.Name" xml:space="preserve">
+    <value>AppointmentDate</value>
+  </data>
+  <data name="&gt;&gt;AppointmentDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

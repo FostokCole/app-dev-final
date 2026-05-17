@@ -29,159 +29,49 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MRForm));
-            this.hopsitalDBDataSet = new HopsitalSystem.HopsitalDBDataSet();
-            this.medicalRecordsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.medicalRecordsTableAdapter = new HopsitalSystem.HopsitalDBDataSetTableAdapters.MedicalRecordsTableAdapter();
-            this.tableAdapterManager = new HopsitalSystem.HopsitalDBDataSetTableAdapters.TableAdapterManager();
-            this.medicalRecordsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.medicalRecordsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.medicalRecordsDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnBack = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.hopsitalDBDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medicalRecordsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medicalRecordsBindingNavigator)).BeginInit();
-            this.medicalRecordsBindingNavigator.SuspendLayout();
+            this.medicalRecordsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hopsitalDBDataSet = new HopsitalSystem.HopsitalDBDataSet();
+            this.button5 = new System.Windows.Forms.Button();
+            this.searchTextBox = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.searchButton = new System.Windows.Forms.Button();
+            this.btnDrAvailability = new System.Windows.Forms.Button();
+            this.mrLbls = new System.Windows.Forms.Label();
+            this.removeButton = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.updateButton = new System.Windows.Forms.Button();
+            this.addButton = new System.Windows.Forms.Button();
+            this.backButton = new System.Windows.Forms.Button();
+            this.medicalRecordsTableAdapter = new HopsitalSystem.HopsitalDBDataSetTableAdapters.MedicalRecordsTableAdapter();
+            this.tableAdapterManager = new HopsitalSystem.HopsitalDBDataSetTableAdapters.TableAdapterManager();
+            this.showAllButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.medicalRecordsDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medicalRecordsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hopsitalDBDataSet)).BeginInit();
             this.SuspendLayout();
-            // 
-            // hopsitalDBDataSet
-            // 
-            this.hopsitalDBDataSet.DataSetName = "HopsitalDBDataSet";
-            this.hopsitalDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // medicalRecordsBindingSource
-            // 
-            this.medicalRecordsBindingSource.DataMember = "MedicalRecords";
-            this.medicalRecordsBindingSource.DataSource = this.hopsitalDBDataSet;
-            // 
-            // medicalRecordsTableAdapter
-            // 
-            this.medicalRecordsTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.AppointmentsTableAdapter = null;
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.DoctorsTableAdapter = null;
-            this.tableAdapterManager.MedicalRecordsTableAdapter = this.medicalRecordsTableAdapter;
-            this.tableAdapterManager.PatientsTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = HopsitalSystem.HopsitalDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // medicalRecordsBindingNavigator
-            // 
-            resources.ApplyResources(this.medicalRecordsBindingNavigator, "medicalRecordsBindingNavigator");
-            this.medicalRecordsBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.medicalRecordsBindingNavigator.BindingSource = this.medicalRecordsBindingSource;
-            this.medicalRecordsBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.medicalRecordsBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.medicalRecordsBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.medicalRecordsBindingNavigatorSaveItem});
-            this.medicalRecordsBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.medicalRecordsBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.medicalRecordsBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.medicalRecordsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.medicalRecordsBindingNavigator.Name = "medicalRecordsBindingNavigator";
-            this.medicalRecordsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            resources.ApplyResources(this.bindingNavigatorAddNewItem, "bindingNavigatorAddNewItem");
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            resources.ApplyResources(this.bindingNavigatorCountItem, "bindingNavigatorCountItem");
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            resources.ApplyResources(this.bindingNavigatorDeleteItem, "bindingNavigatorDeleteItem");
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            resources.ApplyResources(this.bindingNavigatorMoveFirstItem, "bindingNavigatorMoveFirstItem");
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            resources.ApplyResources(this.bindingNavigatorMovePreviousItem, "bindingNavigatorMovePreviousItem");
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            resources.ApplyResources(this.bindingNavigatorSeparator, "bindingNavigatorSeparator");
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            resources.ApplyResources(this.bindingNavigatorPositionItem, "bindingNavigatorPositionItem");
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            resources.ApplyResources(this.bindingNavigatorSeparator1, "bindingNavigatorSeparator1");
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            resources.ApplyResources(this.bindingNavigatorMoveNextItem, "bindingNavigatorMoveNextItem");
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            resources.ApplyResources(this.bindingNavigatorMoveLastItem, "bindingNavigatorMoveLastItem");
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            resources.ApplyResources(this.bindingNavigatorSeparator2, "bindingNavigatorSeparator2");
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            // 
-            // medicalRecordsBindingNavigatorSaveItem
-            // 
-            resources.ApplyResources(this.medicalRecordsBindingNavigatorSaveItem, "medicalRecordsBindingNavigatorSaveItem");
-            this.medicalRecordsBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.medicalRecordsBindingNavigatorSaveItem.Name = "medicalRecordsBindingNavigatorSaveItem";
-            this.medicalRecordsBindingNavigatorSaveItem.Click += new System.EventHandler(this.medicalRecordsBindingNavigatorSaveItem_Click);
             // 
             // medicalRecordsDataGridView
             // 
-            resources.ApplyResources(this.medicalRecordsDataGridView, "medicalRecordsDataGridView");
             this.medicalRecordsDataGridView.AutoGenerateColumns = false;
+            this.medicalRecordsDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft YaHei Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.medicalRecordsDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.medicalRecordsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.medicalRecordsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -189,7 +79,17 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.medicalRecordsDataGridView.DataSource = this.medicalRecordsBindingSource;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.medicalRecordsDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            resources.ApplyResources(this.medicalRecordsDataGridView, "medicalRecordsDataGridView");
             this.medicalRecordsDataGridView.Name = "medicalRecordsDataGridView";
+            this.medicalRecordsDataGridView.RowHeadersVisible = false;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -216,28 +116,143 @@
             resources.ApplyResources(this.dataGridViewTextBoxColumn4, "dataGridViewTextBoxColumn4");
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
-            // btnBack
+            // medicalRecordsBindingSource
             // 
-            resources.ApplyResources(this.btnBack, "btnBack");
-            this.btnBack.Name = "btnBack";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.medicalRecordsBindingSource.DataMember = "MedicalRecords";
+            this.medicalRecordsBindingSource.DataSource = this.hopsitalDBDataSet;
+            // 
+            // hopsitalDBDataSet
+            // 
+            this.hopsitalDBDataSet.DataSetName = "HopsitalDBDataSet";
+            this.hopsitalDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // button5
+            // 
+            resources.ApplyResources(this.button5, "button5");
+            this.button5.Name = "button5";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // searchTextBox
+            // 
+            this.searchTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.searchTextBox, "searchTextBox");
+            this.searchTextBox.Name = "searchTextBox";
+            // 
+            // button4
+            // 
+            resources.ApplyResources(this.button4, "button4");
+            this.button4.Name = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // searchButton
+            // 
+            resources.ApplyResources(this.searchButton, "searchButton");
+            this.searchButton.Name = "searchButton";
+            this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            // 
+            // btnDrAvailability
+            // 
+            resources.ApplyResources(this.btnDrAvailability, "btnDrAvailability");
+            this.btnDrAvailability.Name = "btnDrAvailability";
+            this.btnDrAvailability.UseVisualStyleBackColor = true;
+            // 
+            // mrLbls
+            // 
+            resources.ApplyResources(this.mrLbls, "mrLbls");
+            this.mrLbls.Name = "mrLbls";
+            // 
+            // removeButton
+            // 
+            resources.ApplyResources(this.removeButton, "removeButton");
+            this.removeButton.Name = "removeButton";
+            this.removeButton.UseVisualStyleBackColor = true;
+            this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
+            // 
+            // saveButton
+            // 
+            resources.ApplyResources(this.saveButton, "saveButton");
+            this.saveButton.Name = "saveButton";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+            // 
+            // updateButton
+            // 
+            resources.ApplyResources(this.updateButton, "updateButton");
+            this.updateButton.Name = "updateButton";
+            this.updateButton.UseVisualStyleBackColor = true;
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
+            // 
+            // addButton
+            // 
+            resources.ApplyResources(this.addButton, "addButton");
+            this.addButton.Name = "addButton";
+            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            // 
+            // backButton
+            // 
+            resources.ApplyResources(this.backButton, "backButton");
+            this.backButton.Name = "backButton";
+            this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
+            // medicalRecordsTableAdapter
+            // 
+            this.medicalRecordsTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.AppointmentsTableAdapter = null;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.DoctorsTableAdapter = null;
+            this.tableAdapterManager.MedicalRecordsTableAdapter = this.medicalRecordsTableAdapter;
+            this.tableAdapterManager.PatientsTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = HopsitalSystem.HopsitalDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // showAllButton
+            // 
+            resources.ApplyResources(this.showAllButton, "showAllButton");
+            this.showAllButton.Name = "showAllButton";
+            this.showAllButton.UseVisualStyleBackColor = true;
+            this.showAllButton.Click += new System.EventHandler(this.showAllButton_Click);
             // 
             // MRForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.showAllButton);
+            this.Controls.Add(this.backButton);
+            this.Controls.Add(this.removeButton);
+            this.Controls.Add(this.saveButton);
+            this.Controls.Add(this.updateButton);
+            this.Controls.Add(this.addButton);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.searchTextBox);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.searchButton);
+            this.Controls.Add(this.btnDrAvailability);
+            this.Controls.Add(this.mrLbls);
             this.Controls.Add(this.medicalRecordsDataGridView);
-            this.Controls.Add(this.medicalRecordsBindingNavigator);
             this.Name = "MRForm";
             this.Load += new System.EventHandler(this.MRForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.hopsitalDBDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medicalRecordsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medicalRecordsBindingNavigator)).EndInit();
-            this.medicalRecordsBindingNavigator.ResumeLayout(false);
-            this.medicalRecordsBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.medicalRecordsDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medicalRecordsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hopsitalDBDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -249,24 +264,24 @@
         private System.Windows.Forms.BindingSource medicalRecordsBindingSource;
         private HopsitalDBDataSetTableAdapters.MedicalRecordsTableAdapter medicalRecordsTableAdapter;
         private HopsitalDBDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator medicalRecordsBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton medicalRecordsBindingNavigatorSaveItem;
         private System.Windows.Forms.DataGridView medicalRecordsDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox searchTextBox;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button searchButton;
+        private System.Windows.Forms.Button btnDrAvailability;
+        private System.Windows.Forms.Label mrLbls;
+        private System.Windows.Forms.Button removeButton;
+        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Button updateButton;
+        private System.Windows.Forms.Button addButton;
+        private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.Button showAllButton;
     }
 }

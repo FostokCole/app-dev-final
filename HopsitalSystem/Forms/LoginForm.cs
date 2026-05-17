@@ -34,8 +34,9 @@ namespace HopsitalSystem.Forms
             if(uname == username && pass == password)
             {
                 Form1 frm = new Form1();
-                frm.Show();
                 this.Hide();
+                frm.ShowDialog();
+                this.Close();
             } else
             {
                 lblError.Text = "Invalid username or password";
@@ -64,7 +65,7 @@ namespace HopsitalSystem.Forms
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch (comboBox1.SelectedIndex)
+            switch (languageBox.SelectedIndex)
             {
                 case 0:
                     Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
@@ -82,5 +83,7 @@ namespace HopsitalSystem.Forms
             this.Controls.Clear();
             InitializeComponent();
         }
+
+   
     }
 }

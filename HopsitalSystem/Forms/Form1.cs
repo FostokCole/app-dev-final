@@ -22,58 +22,49 @@ namespace HopsitalSystem
         private void btnPatients_Click(object sender, EventArgs e)
         {
             PatientForm frm = new PatientForm();
-            frm.ShowDialog();
             this.Hide();
+            frm.ShowDialog();
+            this.Show();
         }
 
         private void btnDoctors_Click(object sender, EventArgs e)
         {
             DoctorForm frm = new DoctorForm();
+            this.Hide();
             frm.ShowDialog();
-            this.Hide();
-        }
-
-        
-
-        private void btnMR_Click(object sender, EventArgs e)
-        {
-            MRForm frm = new MRForm();
-            frm.ShowDialog();
-            this.Hide();
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-            this.Hide();
+            this.Show();
         }
 
         private void btnAppointments_Click(object sender, EventArgs e)
         {
             AppointmentForm frm = new AppointmentForm();
-            frm.ShowDialog();
             this.Hide();
+            frm.ShowDialog();
+            this.Show();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnMR_Click(object sender, EventArgs e)
         {
-            switch (comboBox1.SelectedIndex)
-            {
-                case 0:
-                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
-                    Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en");
-                    break;
-                case 1:
-                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("fr");
-                    Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("fr");
-                    break;
-                case 2:
-                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("es");
-                    Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("es");
-                    break;
-            }
-            this.Controls.Clear();
-            InitializeComponent();
+            MRForm frm = new MRForm();
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.appointmentsTableAdapter.Fill(this.hopsitalDBDataSet.Appointments);
+
+            var appointments = this.hopsitalDBDataSet.Appointments
+                .OrderBy(a => a.AppointmentDate)
+                .ToList();
+
+            patientsDataView.DataSource = appointments;
         }
     }
-}
+    }

@@ -29,34 +29,30 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoctorForm));
             this.hopsitalDBDataSet = new HopsitalSystem.HopsitalDBDataSet();
             this.doctorsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.doctorsTableAdapter = new HopsitalSystem.HopsitalDBDataSetTableAdapters.DoctorsTableAdapter();
             this.tableAdapterManager = new HopsitalSystem.HopsitalDBDataSetTableAdapters.TableAdapterManager();
-            this.doctorsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.doctorsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.doctorsDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnDrAvailability = new System.Windows.Forms.Button();
-            this.btnBack = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.updateButton = new System.Windows.Forms.Button();
+            this.addButton = new System.Windows.Forms.Button();
+            this.backButton = new System.Windows.Forms.Button();
+            this.searchButton = new System.Windows.Forms.Button();
+            this.searchTextBox = new System.Windows.Forms.TextBox();
+            this.doctorsTableAdapter1 = new HopsitalSystem.HopsitalDBDataSetTableAdapters.DoctorsTableAdapter();
+            this.doctorsLbl = new System.Windows.Forms.Label();
+            this.removeButton = new System.Windows.Forms.Button();
+            this.showAllButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.hopsitalDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.doctorsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.doctorsBindingNavigator)).BeginInit();
-            this.doctorsBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.doctorsDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,105 +79,18 @@
             this.tableAdapterManager.PatientsTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = HopsitalSystem.HopsitalDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // doctorsBindingNavigator
-            // 
-            this.doctorsBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.doctorsBindingNavigator.BindingSource = this.doctorsBindingSource;
-            this.doctorsBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.doctorsBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.doctorsBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.doctorsBindingNavigatorSaveItem});
-            resources.ApplyResources(this.doctorsBindingNavigator, "doctorsBindingNavigator");
-            this.doctorsBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.doctorsBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.doctorsBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.doctorsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.doctorsBindingNavigator.Name = "doctorsBindingNavigator";
-            this.doctorsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            resources.ApplyResources(this.bindingNavigatorAddNewItem, "bindingNavigatorAddNewItem");
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.Click += new System.EventHandler(this.bindingNavigatorAddNewItem_Click);
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            resources.ApplyResources(this.bindingNavigatorCountItem, "bindingNavigatorCountItem");
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            resources.ApplyResources(this.bindingNavigatorDeleteItem, "bindingNavigatorDeleteItem");
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            resources.ApplyResources(this.bindingNavigatorMoveFirstItem, "bindingNavigatorMoveFirstItem");
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            resources.ApplyResources(this.bindingNavigatorMovePreviousItem, "bindingNavigatorMovePreviousItem");
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            resources.ApplyResources(this.bindingNavigatorSeparator, "bindingNavigatorSeparator");
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            resources.ApplyResources(this.bindingNavigatorPositionItem, "bindingNavigatorPositionItem");
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            resources.ApplyResources(this.bindingNavigatorSeparator1, "bindingNavigatorSeparator1");
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            resources.ApplyResources(this.bindingNavigatorMoveNextItem, "bindingNavigatorMoveNextItem");
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            resources.ApplyResources(this.bindingNavigatorMoveLastItem, "bindingNavigatorMoveLastItem");
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            resources.ApplyResources(this.bindingNavigatorSeparator2, "bindingNavigatorSeparator2");
-            // 
-            // doctorsBindingNavigatorSaveItem
-            // 
-            this.doctorsBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            resources.ApplyResources(this.doctorsBindingNavigatorSaveItem, "doctorsBindingNavigatorSaveItem");
-            this.doctorsBindingNavigatorSaveItem.Name = "doctorsBindingNavigatorSaveItem";
-            this.doctorsBindingNavigatorSaveItem.Click += new System.EventHandler(this.doctorsBindingNavigatorSaveItem_Click);
-            // 
             // doctorsDataGridView
             // 
             this.doctorsDataGridView.AutoGenerateColumns = false;
+            this.doctorsDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.doctorsDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.doctorsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.doctorsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -190,6 +99,15 @@
             this.doctorsDataGridView.DataSource = this.doctorsBindingSource;
             resources.ApplyResources(this.doctorsDataGridView, "doctorsDataGridView");
             this.doctorsDataGridView.Name = "doctorsDataGridView";
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.doctorsDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            this.doctorsDataGridView.RowHeadersVisible = false;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -217,28 +135,89 @@
             this.btnDrAvailability.UseVisualStyleBackColor = true;
             this.btnDrAvailability.Click += new System.EventHandler(this.btnDrAvailability_Click);
             // 
-            // btnBack
+            // saveButton
             // 
-            resources.ApplyResources(this.btnBack, "btnBack");
-            this.btnBack.Name = "btnBack";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            resources.ApplyResources(this.saveButton, "saveButton");
+            this.saveButton.Name = "saveButton";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+            // 
+            // updateButton
+            // 
+            resources.ApplyResources(this.updateButton, "updateButton");
+            this.updateButton.Name = "updateButton";
+            this.updateButton.UseVisualStyleBackColor = true;
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
+            // 
+            // addButton
+            // 
+            resources.ApplyResources(this.addButton, "addButton");
+            this.addButton.Name = "addButton";
+            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            // 
+            // backButton
+            // 
+            resources.ApplyResources(this.backButton, "backButton");
+            this.backButton.Name = "backButton";
+            this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // searchButton
+            // 
+            resources.ApplyResources(this.searchButton, "searchButton");
+            this.searchButton.Name = "searchButton";
+            this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            // 
+            // searchTextBox
+            // 
+            this.searchTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.searchTextBox, "searchTextBox");
+            this.searchTextBox.Name = "searchTextBox";
+            // 
+            // doctorsTableAdapter1
+            // 
+            this.doctorsTableAdapter1.ClearBeforeFill = true;
+            // 
+            // doctorsLbl
+            // 
+            resources.ApplyResources(this.doctorsLbl, "doctorsLbl");
+            this.doctorsLbl.Name = "doctorsLbl";
+            // 
+            // removeButton
+            // 
+            resources.ApplyResources(this.removeButton, "removeButton");
+            this.removeButton.Name = "removeButton";
+            this.removeButton.UseVisualStyleBackColor = true;
+            this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
+            // 
+            // showAllButton
+            // 
+            resources.ApplyResources(this.showAllButton, "showAllButton");
+            this.showAllButton.Name = "showAllButton";
+            this.showAllButton.UseVisualStyleBackColor = true;
+            this.showAllButton.Click += new System.EventHandler(this.showAllButton_Click);
             // 
             // DoctorForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.showAllButton);
+            this.Controls.Add(this.removeButton);
+            this.Controls.Add(this.searchTextBox);
+            this.Controls.Add(this.saveButton);
+            this.Controls.Add(this.updateButton);
+            this.Controls.Add(this.addButton);
+            this.Controls.Add(this.backButton);
+            this.Controls.Add(this.searchButton);
             this.Controls.Add(this.btnDrAvailability);
             this.Controls.Add(this.doctorsDataGridView);
-            this.Controls.Add(this.doctorsBindingNavigator);
+            this.Controls.Add(this.doctorsLbl);
             this.Name = "DoctorForm";
             this.Load += new System.EventHandler(this.DoctorForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.hopsitalDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.doctorsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.doctorsBindingNavigator)).EndInit();
-            this.doctorsBindingNavigator.ResumeLayout(false);
-            this.doctorsBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.doctorsDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -251,24 +230,20 @@
         private System.Windows.Forms.BindingSource doctorsBindingSource;
         private HopsitalDBDataSetTableAdapters.DoctorsTableAdapter doctorsTableAdapter;
         private HopsitalDBDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator doctorsBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton doctorsBindingNavigatorSaveItem;
         private System.Windows.Forms.DataGridView doctorsDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.Button btnDrAvailability;
-        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Button updateButton;
+        private System.Windows.Forms.Button addButton;
+        private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.Button searchButton;
+        private System.Windows.Forms.TextBox searchTextBox;
+        private HopsitalDBDataSetTableAdapters.DoctorsTableAdapter doctorsTableAdapter1;
+        private System.Windows.Forms.Label doctorsLbl;
+        private System.Windows.Forms.Button removeButton;
+        private System.Windows.Forms.Button showAllButton;
     }
 }

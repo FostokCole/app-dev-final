@@ -18,13 +18,7 @@ namespace HopsitalSystem.Forms
             InitializeComponent();
         }
 
-        private void patientsBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.patientsBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.hopsitalDBDataSet);
-
-        }
+     
 
         private void PatientForm_Load(object sender, EventArgs e)
         {
@@ -64,24 +58,71 @@ namespace HopsitalSystem.Forms
             this.patientsTableAdapter.Fill(this.hopsitalDBDataSet.Patients);
         }
 
-        private void btnBookAppointment_Click(object sender, EventArgs e)
-        {
-            if(patientsDataGridView.CurrentRow == null)
-            {
-                MessageBox.Show("Please select a patient first");
-                return;
-            }
-            int patientID = Convert.ToInt32(
-                patientsDataGridView.CurrentRow.Cells[0].Value);
-            string patientName = patientsDataGridView.CurrentRow.Cells[1].Value.ToString();
-
-            BookAppointment frm = new BookAppointment(patientID, patientName, this.hopsitalDBDataSet);
-            frm.ShowDialog();
-        }
-
+    
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.patientsBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.hopsitalDBDataSet);
+        }
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+            Add frm = new Add("Add Patient", "Name", "Age", "Phone", "");
+
+            if (frm.ShowDialog() == DialogResult.OK)
+            {
+                patientsTableAdapter.Insert(
+                    frm.value1,
+                    Convert.ToInt32(frm.value2),
+                    frm.value3
+                );
+
+                patientsTableAdapter.Fill(hopsitalDBDataSet.Patients);
+            }
+        }
+
+        private void updateButton_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+
+            patientsBindingSource.EndEdit();
+
+            tableAdapterManager.UpdateAll(hopsitalDBDataSet);
+
+            MessageBox.Show("Updated successfully.");
+        }
+
+        private void removeButton_Click(object sender, EventArgs e)
+        {
+            if (patientsDataGridView.CurrentRow == null)
+            {
+                MessageBox.Show("Please select a row first.");
+                return;
+            }
+
+            DialogResult result = MessageBox.Show(
+                "Are you sure you want to delete this row?",
+                "Confirm Delete",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning
+            );
+
+            if (result == DialogResult.Yes)
+            {
+                patientsBindingSource.RemoveCurrent();
+
+                this.Validate();
+                patientsBindingSource.EndEdit();
+                tableAdapterManager.UpdateAll(hopsitalDBDataSet);
+
+                MessageBox.Show("Row deleted successfully.");
+            }
         }
     }
 }

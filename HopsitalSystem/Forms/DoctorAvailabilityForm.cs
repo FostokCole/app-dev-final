@@ -24,7 +24,7 @@ namespace HopsitalSystem.Forms
             this.drName = drName;
         }
 
-        private void appointmentsBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        private void saveButton_Click(object sender, EventArgs e)
         {
             this.Validate();
             this.appointmentsBindingSource.EndEdit();
@@ -47,9 +47,25 @@ namespace HopsitalSystem.Forms
             scheduleGrid.Columns["DoctorID"].Visible = false;
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
+       
+
+        private void backButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void removeButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void updateButton_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            appointmentsBindingSource.EndEdit();
+            tableAdapterManager.UpdateAll(hopsitalDBDataSet);
+
+            MessageBox.Show("Availability updated successfully.");
         }
     }
 }

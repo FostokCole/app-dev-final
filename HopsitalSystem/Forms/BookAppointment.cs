@@ -24,69 +24,132 @@ namespace HopsitalSystem.Forms
             datSet = dataSet;
             lblPatientName.Text = Name;
         }
-
-        private void btnBook_Click(object sender, EventArgs e)
+        public BookAppointment()
         {
+            InitializeComponent();
+        }
+        private void bookButton_Click(object sender, EventArgs e)
+        {
+            if (patientsDataView.CurrentRow == null)
+            {
+                MessageBox.Show("Please select a patient first.");
+                return;
+            }
+
             if (DoctorComboBox.SelectedItem == null)
             {
-                MessageBox.Show("Please select a doctor");
-                return;
-            }
-            if (appointmentDatePicker.Value < DateTime.Now)
-            {
-                MessageBox.Show("Cannot book an appointment in the past.");
+                MessageBox.Show("Please select a doctor.");
                 return;
             }
 
+            patID = Convert.ToInt32(
+                patientsDataView.CurrentRow.Cells[0].Value
+            );
+
+            int docID = Convert.ToInt32(DoctorComboBox.SelectedValue);
+            DateTime appointmentDate = appointmentDatePicker.Value;
+
+            int conflicts = Convert.ToInt32(
+                appointmentsAdapter.IsDoctorBusy(docID, appointmentDate)
+            );
+
+            if (conflicts > 0)
+            {
+                MessageBox.Show("This doctor already has an appointment at that time.");
+                return;
+            }
+
+            appointmentsAdapter.InsertAppointment(patID, docID, appointmentDate);
+
+            MessageBox.Show("Appointment booked successfully.");
+            this.Close();
+        }
+
+        private void BookAppointment_Load(object sender, EventArgs e)
+        {
             try
             {
-                int docID = Convert.ToInt32(DoctorComboBox.SelectedValue);
-                DateTime appointmentDate = appointmentDatePicker.Value;
+                doctorsAdapter.Fill(this.hopsitalDBDataSet.Doctors);
 
-                int conflicts = Convert.ToInt32(
-                appointmentsAdapter.IsDoctorBusy(docID, appointmentDate));
+                var doctors = this.hopsitalDBDataSet.Doctors
+                    .Select()
+                    .Select(row => new
+                    {
+                        DoctorID = Convert.ToInt32(row["DoctorId"]),
+                        Display = row["Name"].ToString() + " - " + row["Specialty"].ToString()
+                    })
+                    .ToList();
 
-                if (conflicts > 0)
+                DoctorComboBox.DataSource = doctors;
+                DoctorComboBox.DisplayMember = "Display";
+                DoctorComboBox.ValueMember = "DoctorID";
+                DoctorComboBox.SelectedIndex = -1;
+
+                appointmentDatePicker.MinDate = DateTime.Today;
+                appointmentDatePicker.Value = DateTime.Today;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            patientsTableAdapter.Fill(this.hopsitalDBDataSet.Patients);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        private void btnBookAppointment_Click(object sender, EventArgs e)
+        {
+            if (patientsDataView.CurrentRow == null)
+            {
+                MessageBox.Show("Please select a patient first");
+                return;
+            }
+            int patientID = Convert.ToInt32(
+               patientsDataView.CurrentRow.Cells[0].Value);
+            string patientName = patientsDataView.CurrentRow.Cells[1].Value.ToString();
+
+            BookAppointment frm = new BookAppointment(patientID, patientName, this.hopsitalDBDataSet);
+            frm.ShowDialog();
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+          
+        }
+
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(searchTextBox.Text))
+            {
+                MessageBox.Show("Enter a name to search");
+                return;
+            }
+            try
+            {
+                this.patientsTableAdapter.SearchByName(
+                    this.hopsitalDBDataSet.Patients,
+                    searchTextBox.Text.Trim()
+                    );
+
+                int results = this.hopsitalDBDataSet.Patients.Count;
+
+                if (results == 0)
                 {
-                    MessageBox.Show(
-                        "This doctor already has an appointment at that time.");
-                    return;
+                    MessageBox.Show("No Patients found matching that name");
                 }
-
-                appointmentsAdapter.InsertAppointment(patID, docID, appointmentDate);
-
-                this.Close();
-            } 
+            }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
 
-        private void BookAppointment_Load(object sender, EventArgs e)
+        private void showAllButton_Click(object sender, EventArgs e)
         {
-            DoctorComboBox.DisplayMember = "Display";
-            DoctorComboBox.ValueMember = "DoctorID";
-            doctorsAdapter.Fill(datSet.Doctors);
-
-            var doctors = datSet.Doctors
-                .Select()
-                .Select(row => new
-                {
-                    DoctorID = row[0],
-                    Display = row[1] + " - " + row[2]
-                })
-                .ToList();
-
-            DoctorComboBox.DataSource = doctors;
-
-            appointmentDatePicker.MinDate = DateTime.Today;
-            appointmentDatePicker.Value = DateTime.Today;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            this.patientsTableAdapter.Fill(this.hopsitalDBDataSet.Patients);
         }
     }
 }

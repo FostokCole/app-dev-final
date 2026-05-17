@@ -2270,9 +2270,9 @@ namespace HopsitalSystem.HopsitalDBDataSetTableAdapters {
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Appointments] ([PatientId], [DoctorId], [AppointmentDate]) VAL" +
-                "UES (@PatientId, @DoctorId, @AppointmentDate);\r\nSELECT AppointmentId, PatientId," +
-                " DoctorId, AppointmentDate FROM Appointments WHERE (AppointmentId = SCOPE_IDENTI" +
-                "TY())";
+                "UES (@PatientId, @DoctorId, @AppointmentDate);\nSELECT AppointmentId, PatientId, " +
+                "DoctorId, AppointmentDate FROM Appointments WHERE (AppointmentId = SCOPE_IDENTIT" +
+                "Y())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PatientId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PatientId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DoctorId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DoctorId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -2305,52 +2305,58 @@ SELECT AppointmentId, PatientId, DoctorId, AppointmentDate FROM Appointments WHE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[7];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[8];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT AppointmentId, PatientId, DoctorId, AppointmentDate FROM dbo.Appointments";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT AppointmentDate \r\nFROM Appointments\r\nWHERE DoctorID = @DoctorID\r\nAND CAST(" +
-                "AppointmentDate AS DATE) = CAST(@AppointmentDate AS DATE)";
+            this._commandCollection[1].CommandText = "SELECT AppointmentDate \nFROM Appointments\nWHERE DoctorID = @DoctorID\nAND CAST(App" +
+                "ointmentDate AS DATE) = CAST(@AppointmentDate AS DATE)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DoctorID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "DoctorId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppointmentDate", global::System.Data.SqlDbType.VarChar, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT a.AppointmentID, \r\n       p.Name AS PatientName, \r\n       d.Name AS Doctor" +
-                "Name, \r\n       a.AppointmentDate\r\nFROM Appointments a\r\nJOIN Patients p ON a.Pati" +
-                "entID = p.PatientID\r\nJOIN Doctors d ON a.DoctorID = d.DoctorID";
+            this._commandCollection[2].CommandText = "SELECT a.AppointmentID, \n       p.Name AS PatientName, \n       d.Name AS DoctorNa" +
+                "me, \n       a.AppointmentDate\nFROM Appointments a\nJOIN Patients p ON a.PatientID" +
+                " = p.PatientID\nJOIN Doctors d ON a.DoctorID = d.DoctorID";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = "SELECT a.AppointmentID, \r\n       p.Name AS PatientName, \r\n       d.Name AS Doctor" +
-                "Name, \r\n       a.AppointmentDate\r\nFROM Appointments a\r\nJOIN Patients p ON a.Pati" +
-                "entID = p.PatientID\r\nJOIN Doctors d ON a.DoctorID = d.DoctorID";
+            this._commandCollection[3].CommandText = "SELECT a.AppointmentID, \n       p.Name AS PatientName, \n       d.Name AS DoctorNa" +
+                "me, \n       a.AppointmentDate\nFROM Appointments a\nJOIN Patients p ON a.PatientID" +
+                " = p.PatientID\nJOIN Doctors d ON a.DoctorID = d.DoctorID";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[4].Connection = this.Connection;
-            this._commandCollection[4].CommandText = "SELECT a.AppointmentID,\r\n       p.Name AS PatientName,\r\n       a.AppointmentDate\r" +
-                "\nFROM Appointments a\r\nJOIN Patients p ON a.PatientID = p.PatientID\r\nWHERE a.Doct" +
-                "orID = @DoctorID\r\nORDER BY a.AppointmentDate";
+            this._commandCollection[4].CommandText = "SELECT a.AppointmentID,\n       p.Name AS PatientName,\n       a.AppointmentDate\nFR" +
+                "OM Appointments a\nJOIN Patients p ON a.PatientID = p.PatientID\nWHERE a.DoctorID " +
+                "= @DoctorID\nORDER BY a.AppointmentDate";
             this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DoctorID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "DoctorId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[5] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[5].Connection = this.Connection;
-            this._commandCollection[5].CommandText = "INSERT INTO Appointments (PatientID, DoctorID, AppointmentDate)\r\nVALUES (@Patient" +
-                "ID, @DoctorID, @AppointmentDate)";
+            this._commandCollection[5].CommandText = "INSERT INTO Appointments (PatientID, DoctorID, AppointmentDate)\nVALUES (@PatientI" +
+                "D, @DoctorID, @AppointmentDate)";
             this._commandCollection[5].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PatientID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "PatientId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DoctorID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "DoctorId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppointmentDate", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 0, 0, "AppointmentDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[6] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[6].Connection = this.Connection;
-            this._commandCollection[6].CommandText = "SELECT COUNT(*) \r\nFROM Appointments\r\nWHERE DoctorID = @DoctorID \r\nAND Appointment" +
-                "Date = @AppointmentDate";
+            this._commandCollection[6].CommandText = "SELECT COUNT(*) \nFROM Appointments\nWHERE DoctorID = @DoctorID \nAND AppointmentDat" +
+                "e = @AppointmentDate";
             this._commandCollection[6].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[6].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DoctorID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "DoctorId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[6].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AppointmentDate", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 0, 0, "AppointmentDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[7] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[7].Connection = this.Connection;
+            this._commandCollection[7].CommandText = "SELECT AppointmentId, PatientId, DoctorId, AppointmentDate FROM dbo.Appointments " +
+                "WHERE @value = PatientId;";
+            this._commandCollection[7].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[7].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@value", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "PatientId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2441,6 +2447,25 @@ SELECT AppointmentId, PatientId, DoctorId, AppointmentDate FROM Appointments WHE
             HopsitalDBDataSet.AppointmentsDataTable dataTable = new HopsitalDBDataSet.AppointmentsDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int SearchById(HopsitalDBDataSet.AppointmentsDataTable dataTable, global::System.Nullable<int> value) {
+            this.Adapter.SelectCommand = this.CommandCollection[7];
+            if ((value.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((int)(value.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2850,8 +2875,8 @@ SELECT AppointmentId, PatientId, DoctorId, AppointmentDate FROM Appointments WHE
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Specialty", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Specialty", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Doctors] ([Name], [Specialty]) VALUES (@Name, @Specialty);\r\nSE" +
-                "LECT DoctorId, Name, Specialty FROM Doctors WHERE (DoctorId = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Doctors] ([Name], [Specialty]) VALUES (@Name, @Specialty);\nSEL" +
+                "ECT DoctorId, Name, Specialty FROM Doctors WHERE (DoctorId = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Specialty", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Specialty", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -2880,11 +2905,16 @@ SELECT DoctorId, Name, Specialty FROM Doctors WHERE (DoctorId = @DoctorId)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT DoctorId, Name, Specialty FROM dbo.Doctors";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT DoctorId, Name, Specialty FROM dbo.Doctors\r\nWhere @value = DoctorId;\r\n";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@value", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "DoctorId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2909,6 +2939,20 @@ SELECT DoctorId, Name, Specialty FROM Doctors WHERE (DoctorId = @DoctorId)";
             HopsitalDBDataSet.DoctorsDataTable dataTable = new HopsitalDBDataSet.DoctorsDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int SearchById(HopsitalDBDataSet.DoctorsDataTable dataTable, int value) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(value));
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3211,8 +3255,8 @@ SELECT DoctorId, Name, Specialty FROM Doctors WHERE (DoctorId = @DoctorId)";
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[MedicalRecords] ([PatientId], [Diagnosis], [Treatment]) VALUES" +
-                " (@PatientId, @Diagnosis, @Treatment);\r\nSELECT RecordId, PatientId, Diagnosis, T" +
-                "reatment FROM MedicalRecords WHERE (RecordId = SCOPE_IDENTITY())";
+                " (@PatientId, @Diagnosis, @Treatment);\nSELECT RecordId, PatientId, Diagnosis, Tr" +
+                "eatment FROM MedicalRecords WHERE (RecordId = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PatientId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PatientId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Diagnosis", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Diagnosis", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -3245,11 +3289,17 @@ SELECT RecordId, PatientId, Diagnosis, Treatment FROM MedicalRecords WHERE (Reco
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT RecordId, PatientId, Diagnosis, Treatment FROM dbo.MedicalRecords";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT RecordId, PatientId, Diagnosis, Treatment\r\nFROM dbo.MedicalRecords\r\nWHERE " +
+                "@value = RecordId;";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@value", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "RecordId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3274,6 +3324,20 @@ SELECT RecordId, PatientId, Diagnosis, Treatment FROM MedicalRecords WHERE (Reco
             HopsitalDBDataSet.MedicalRecordsDataTable dataTable = new HopsitalDBDataSet.MedicalRecordsDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int SearchById(HopsitalDBDataSet.MedicalRecordsDataTable dataTable, int value) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(value));
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3604,8 +3668,8 @@ SELECT RecordId, PatientId, Diagnosis, Treatment FROM MedicalRecords WHERE (Reco
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Patients] ([Name], [Age], [Phone]) VALUES (@Name, @Age, @Phone" +
-                ");\r\nSELECT PatientId, Name, Age, Phone FROM Patients WHERE (PatientId = SCOPE_ID" +
-                "ENTITY())";
+                ");\nSELECT PatientId, Name, Age, Phone FROM Patients WHERE (PatientId = SCOPE_IDE" +
+                "NTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Age", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Age", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -3645,8 +3709,8 @@ SELECT PatientId, Name, Age, Phone FROM Patients WHERE (PatientId = @PatientId)"
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT PatientID, Name, Age, Phone\r\nFROM dbo.Patients\r\nWHERE Name LIKE \'%\' + @val" +
-                "ue + \'%\'";
+            this._commandCollection[1].CommandText = "SELECT PatientID, Name, Age, Phone\nFROM dbo.Patients\nWHERE Name LIKE \'%\' + @value" +
+                " + \'%\'";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@value", global::System.Data.SqlDbType.NVarChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }

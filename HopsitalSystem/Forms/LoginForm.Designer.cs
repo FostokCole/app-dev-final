@@ -36,19 +36,26 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblError = new System.Windows.Forms.Label();
             this.lblLang = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.languageBox = new System.Windows.Forms.ComboBox();
+            this.LogIn = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.registerButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtUsername
             // 
+            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.txtUsername, "txtUsername");
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
             // txtPassword
             // 
+            this.txtPassword.BackColor = System.Drawing.SystemColors.Window;
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.txtPassword, "txtPassword");
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.UseSystemPasswordChar = true;
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // btnLogin
@@ -62,6 +69,7 @@
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
+
             // 
             // label2
             // 
@@ -79,22 +87,43 @@
             resources.ApplyResources(this.lblLang, "lblLang");
             this.lblLang.Name = "lblLang";
             // 
-            // comboBox1
+            // languageBox
             // 
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            resources.GetString("comboBox1.Items"),
-            resources.GetString("comboBox1.Items1"),
-            resources.GetString("comboBox1.Items2")});
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            resources.ApplyResources(this.languageBox, "languageBox");
+            this.languageBox.FormattingEnabled = true;
+            this.languageBox.Items.AddRange(new object[] {
+            resources.GetString("languageBox.Items"),
+            resources.GetString("languageBox.Items1"),
+            resources.GetString("languageBox.Items2")});
+            this.languageBox.Name = "languageBox";
+            this.languageBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // LogIn
+            // 
+            resources.ApplyResources(this.LogIn, "LogIn");
+            this.LogIn.Name = "LogIn";
+           
+            // 
+            // label3
+            // 
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // registerButton
+            // 
+            resources.ApplyResources(this.registerButton, "registerButton");
+            this.registerButton.Name = "registerButton";
+            this.registerButton.UseVisualStyleBackColor = true;
             // 
             // LoginForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.registerButton);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.LogIn);
+            this.Controls.Add(this.languageBox);
             this.Controls.Add(this.lblLang);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.label2);
@@ -117,6 +146,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.Label lblLang;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox languageBox;
+        private System.Windows.Forms.Label LogIn;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button registerButton;
     }
 }
