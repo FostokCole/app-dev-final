@@ -84,6 +84,9 @@ namespace HopsitalSystem.Forms
             InitializeComponent();
         }
 
-   
+        private void LogIn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

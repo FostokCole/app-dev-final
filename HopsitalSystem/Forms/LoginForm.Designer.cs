@@ -38,8 +38,6 @@
             this.lblLang = new System.Windows.Forms.Label();
             this.languageBox = new System.Windows.Forms.ComboBox();
             this.LogIn = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.registerButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtUsername
@@ -69,7 +67,6 @@
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-
             // 
             // label2
             // 
@@ -102,26 +99,12 @@
             // 
             resources.ApplyResources(this.LogIn, "LogIn");
             this.LogIn.Name = "LogIn";
-           
-            // 
-            // label3
-            // 
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
-            // registerButton
-            // 
-            resources.ApplyResources(this.registerButton, "registerButton");
-            this.registerButton.Name = "registerButton";
-            this.registerButton.UseVisualStyleBackColor = true;
+            this.LogIn.Click += new System.EventHandler(this.LogIn_Click);
             // 
             // LoginForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.registerButton);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.LogIn);
             this.Controls.Add(this.languageBox);
             this.Controls.Add(this.lblLang);
@@ -148,7 +131,5 @@
         private System.Windows.Forms.Label lblLang;
         private System.Windows.Forms.ComboBox languageBox;
         private System.Windows.Forms.Label LogIn;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button registerButton;
     }
 }

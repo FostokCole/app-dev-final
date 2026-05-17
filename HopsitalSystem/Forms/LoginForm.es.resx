@@ -117,15 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnLogin.Text" xml:space="preserve">
+    <value>Ingresar </value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 13</value>
+    <value>130, 28</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Identificador</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 13</value>
+    <value>119, 28</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Contraseña</value>
@@ -134,18 +137,22 @@
     <value>148, 69</value>
   </data>
   <data name="lblLang.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 518</value>
+    <value>7, 311</value>
   </data>
   <data name="lblLang.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 13</value>
+    <value>177, 21</value>
   </data>
   <data name="lblLang.Text" xml:space="preserve">
     <value>Idioma actual: Español</value>
   </data>
-  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>249, 515</value>
+  <data name="languageBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>190, 309</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>748, 536</value>
+  <data name="LogIn.Text" xml:space="preserve">
+    <value>Ingresar </value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
 </root>

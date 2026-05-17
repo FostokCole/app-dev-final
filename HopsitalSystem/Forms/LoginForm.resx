@@ -134,9 +134,6 @@
   <data name="txtUsername.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="txtUsername.Text" xml:space="preserve">
-    <value>admin</value>
-  </data>
   <data name="&gt;&gt;txtUsername.Name" xml:space="preserve">
     <value>txtUsername</value>
   </data>
@@ -147,7 +144,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtUsername.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>8</value>
   </data>
   <data name="txtPassword.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei Light, 14.25pt</value>
@@ -167,9 +164,6 @@
   <data name="txtPassword.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="txtPassword.Text" xml:space="preserve">
-    <value>pass</value>
-  </data>
   <data name="&gt;&gt;txtPassword.Name" xml:space="preserve">
     <value>txtPassword</value>
   </data>
@@ -180,7 +174,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtPassword.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>7</value>
   </data>
   <data name="btnLogin.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei UI Light, 18pt</value>
@@ -207,7 +201,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnLogin.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>6</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -237,7 +231,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -267,7 +261,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>4</value>
   </data>
   <data name="lblError.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -291,7 +285,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblError.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>3</value>
   </data>
   <data name="lblLang.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -300,7 +294,7 @@
     <value>Microsoft YaHei Light, 12pt</value>
   </data>
   <data name="lblLang.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-1, 355</value>
+    <value>-2, 304</value>
   </data>
   <data name="lblLang.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 21</value>
@@ -321,7 +315,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblLang.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="languageBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei Light, 11.25pt</value>
@@ -336,7 +330,7 @@
     <value>Español</value>
   </data>
   <data name="languageBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 352</value>
+    <value>149, 301</value>
   </data>
   <data name="languageBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 28</value>
@@ -357,7 +351,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;languageBox.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>1</value>
   </data>
   <data name="LogIn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei Light, 27.75pt</value>
@@ -391,77 +385,11 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;LogIn.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei Light, 14.25pt</value>
-  </data>
-  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 276</value>
-  </data>
-  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="label3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>403, 70</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>For first time users, please create an account.</value>
-  </data>
-  <data name="label3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="registerButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI Light, 11.25pt</value>
-  </data>
-  <data name="registerButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="registerButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>277, 352</value>
-  </data>
-  <data name="registerButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 28</value>
-  </data>
-  <data name="registerButton.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="registerButton.Text" xml:space="preserve">
-    <value>Register</value>
-  </data>
-  <data name="&gt;&gt;registerButton.Name" xml:space="preserve">
-    <value>registerButton</value>
-  </data>
-  <data name="&gt;&gt;registerButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;registerButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;registerButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>fr</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -469,7 +397,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>408, 384</value>
+    <value>392, 341</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>LoginForm</value>
